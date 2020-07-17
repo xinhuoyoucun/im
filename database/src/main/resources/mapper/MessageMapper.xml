@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="MessageMapper">
+  <resultMap id="BaseResultMap" type="Message">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="time" jdbcType="INTEGER" property="time" />
+    <result column="fromUserId" jdbcType="INTEGER" property="fromuserid" />
+    <result column="toUserId" jdbcType="INTEGER" property="touserid" />
+    <result column="flow" jdbcType="VARCHAR" property="flow" />
+    <result column="msgType" jdbcType="VARCHAR" property="msgtype" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>
